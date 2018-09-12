@@ -18,7 +18,7 @@ public class StudentManagement {
         else System.out.println(a.getName() + " and " + K62_uet.getName() + " are different class");
         if (sameGroup(b,K62_uet)) System.out.println(b.getName()+" and " + K62_uet.getName() + " are same class");
         else System.out.println(b.getName() + " and " + K62_uet.getName() + " are different class");
-      /*  Array[0] = new  Student("Vu Viet Hoang", "INT 2204 4",
+        Array[0] = new  Student("Vu Viet Hoang", "INT 2204 4",
                 "vuviethoang@gmail.com", 17020712);
         Array[1] = new Student("Nguyen Phuong Hieu","INT2204 1",
                 "hieuadh@gmail.com",17020672);
@@ -32,7 +32,7 @@ public class StudentManagement {
                 "hieuadh@gmail.com",17020712);
         removeStudent(17020971);
         studentsByGroup();
-        */
+        
     }
 
 
@@ -65,6 +65,7 @@ public class StudentManagement {
                 for(int j=i;j<n-1;j++) {
                     Array[j].setAll(Array[j + 1]);
                 }
+                Array[n-1] = null;
                 n--;
                 break;
             }
