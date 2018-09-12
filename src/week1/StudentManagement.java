@@ -1,7 +1,7 @@
 package week1;
 public class StudentManagement {
     private static int n=6;
-    private static Student[] Array = new Student[n];
+    private static Student[] Array = new Student[100];
 
     public static void main(String[] args) {
         Student K62_uet = new Student("Nguyen Viet Hoang", "INT 2204 4",
@@ -32,7 +32,8 @@ public class StudentManagement {
                 "hieuadh@gmail.com",17020712);
         removeStudent(17020971);
         studentsByGroup();
-        
+
+
     }
 
 
