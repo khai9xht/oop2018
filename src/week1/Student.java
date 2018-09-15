@@ -24,7 +24,7 @@ public class Student {
         this.id = s.id;
     }
     public String getName(){
-        return name;
+        return  name;
     }
     public String getGroup(){
         return group;
