@@ -29,12 +29,16 @@ public class Student {
     public String getGroup(){
         return group;
     }
+    public String getEmail(){return email;}
     public int getId(){
         return id;
     }
     public void setName(String n){
         name = n;
     }
+    public void setEmail(String n){email = n;}
+    public void setGroup(String n){group = n;}
+    public void setId(int n){id = n;};
     public String getInfo() {
         return ("Your name: " + name + '\n' + "Your group: " + group
                 + '\n' + "Your id: " + id + '\n' + "Your email: " + email);
