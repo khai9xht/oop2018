@@ -34,7 +34,8 @@ public class StudentManagement {
                 "hieuadh@gmail.com",17020692);
         SM.Array[5] = new Student("Nguyen thi Hoa","INT 2204 11",
                 "hieuadh@gmail.com",17020672);
-        SM.removeStudent(17020712);
+        SM.studentsByGroup();
+        SM.removeStudent(17020642);
         SM.studentsByGroup();
 
     }
@@ -69,6 +70,7 @@ public class StudentManagement {
                 for(int j=i;j<n-1;j++) {
                     this.Array[j].setAll(this.Array[j+1]);
                 }
+                this.Array[n-1] = null;
                 this.setNum(n-1);
                 break;
             }
