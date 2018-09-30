@@ -123,10 +123,10 @@ class electricFan{          //quạt điện
     }
 
     public int feeOfFan(){              // tiền điện hàng tháng
-        int numberOfElecttic = (this.capacity()*hoursPerDay*3600*30)/3600000;
-        if(numberOfElecttic <= 50) return numberOfElecttic*fee1;
-        else if(numberOfElecttic <= 100) return 50*fee1 +(numberOfElecttic - 50)*fee2;
-        else return 50*fee1 +50*fee2 +(numberOfElecttic-100)*fee3;
+        int numberOfElecttic = (this.capacity()*hoursPerDay*3600*30)/3600000; //tính số điện
+        if(numberOfElecttic <= 50) return numberOfElecttic*fee1;                //gía 50 số đầu
+        else if(numberOfElecttic <= 100) return 50*fee1 +(numberOfElecttic - 50)*fee2;  //51->100
+        else return 50*fee1 +50*fee2 +(numberOfElecttic-100)*fee3;                      //>100
     }
     public boolean testFun(int von, int ampe){       // kiểm tra quạt
         return !(von < Von || von > Von*Math.sqrt(2) || ampe < Ampe || ampe > Ampe*Math.sqrt(2));
