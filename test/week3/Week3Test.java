@@ -7,6 +7,9 @@ public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức max()
     @Test
+    /**
+     * kiểm tran hàm tìm số lớn nhất(max)
+     */
     public void test_max(){
         Week3 week3 = new Week3();
         Assert.assertEquals(4,week3.max(4,2));
@@ -18,8 +21,12 @@ public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức minOfArray()
     @Test
+    /**
+     *kiểm tra hàm tìm số lớn nhất trong dãy
+     */
     public void test_minOfArray(){
         Week3 week3 = new Week3();
+        //khởi tạo mảng để kiểm tra
         int[] x = {3,4,1,5,3,45,2,234,234,35,2};
         int[] y = {2314,234,1234,23,4,234};
         int[] z = {23,24,124,0,34,24,24,2,5235,2,34,223,5452,35,23,5425,42,5,2,35,3254,32,4,32,4};
@@ -34,6 +41,9 @@ public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức calculateBMI()
     @Test
+    /**
+     * kiểm tra hàm BMI
+     */
     public void test_calculateBMI(){
         Week3 week3 = new Week3();
         Assert.assertEquals("Thiếu cân", week3.calculateBMI(45,1.7));
