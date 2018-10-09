@@ -7,3 +7,13 @@
  * @version 0.1
  */
 package week4.task1;
+
+class main{
+    public static void main(String[] args) {
+        Fruit fruit = new Fruit();
+        Apple apple = new Apple("red","Vietnam",10000,5);
+        Orange orange = new Orange("orange","Vietnam",50000,"China");
+        Sanh_Orange sanh_orange = new Sanh_Orange("green","ThaiBinh",20000,"ThaiLan",true);
+        ThanhPhong_Orange thanhPhong_orange = new ThanhPhong_Orange();
+    }
+}
