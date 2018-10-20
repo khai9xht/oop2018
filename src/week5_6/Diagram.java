@@ -1,6 +1,7 @@
 package week5_6;
 
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 
 /**
@@ -12,12 +13,16 @@ public class Diagram extends JFrame{
     ArrayList<Layer> diagram = new ArrayList<>();
     public Diagram(ArrayList<Layer> diagram) {
         this.diagram = diagram;
-        this.setBounds(100,100,max_width,max_height);
+        this.setBounds(500,150,max_width,max_height);
+        this.setBackground(Color.RED);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
 
     public Diagram() {
         this.setBounds(500,150,max_width,max_height);
+        this.setBackground(Color.RED);
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setVisible(true);
     }
 
