@@ -12,6 +12,6 @@ public class ExpressionTest {
         Square x = new Square(a);
         BinaryExpression y = new Addition(new Subtraction(x,b) , new  Multiplication(c,d));
         Square z = new Square(y);
-        System.out.print(z.ivaluate());
+        System.out.print("value of z = "+z.ivaluate());
     }
 }
