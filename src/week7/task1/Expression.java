@@ -1,4 +1,6 @@
 package week7.task1;
 
-public class Expression {
+public abstract class Expression {
+     abstract int ivaluate();
+     abstract String tostring();
 }
